@@ -1043,10 +1043,6 @@ video {
   text-transform: uppercase;
 }
 
-.italic {
-  font-style: italic;
-}
-
 .leading-10 {
   line-height: 2.5rem;
 }
@@ -1094,11 +1090,6 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity, 1));
-}
-
-.text-red-800 {
-  --tw-text-opacity: 1;
-  color: rgb(153 27 27 / var(--tw-text-opacity, 1));
 }
 
 .text-white {
