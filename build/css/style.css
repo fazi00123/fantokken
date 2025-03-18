@@ -1255,7 +1255,7 @@ video {
   }
 
   50% {
-    transform: translateX(90px) translateY(0px);
+    transform: translateX(0px) translateY(90px);
   }
 
   100% {
