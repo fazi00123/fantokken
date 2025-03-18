@@ -9,7 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
-<body class="bg-no-repeat bg-cover overflow-x-hidden" style="background-image: url(img/bg.png);">
+<body class="bg-no-repeat bg-cover overflow-x-hidden" style="background-image: url(img/Landingbg.png);">
     <nav x-data="{ open: false }" class="2xl:px-24 lg:px-10 px-5 xl:pt-14 pt-6">
         <div class="flex justify-between items-center">
             <!-- Logo -->
@@ -84,28 +84,30 @@
         </div>
     </nav>
 
-<section class="2xl:px-24 lg:px-10 px-5 2xl:pt-56 lg:pt-28 pt-20">
-    <div class="flex md:flex-row flex-col items-center">
-    <div class="md:w-1/2 w-full" >
-        <h1 class="text-white 2xl:text-[120px] xl:text-8xl lg:text-7xl md:text-6xl  text-5xl uppercase" data-aos="fade-down"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duration="2000"
-        data-aos-delay="500">Fan Tokens A New Era in Music</h1>
-        <p class="2xl:text-xl text-base pt-2 text-[#C1C1C1]" data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duration="2000"
-        data-aos-delay="500">Discover a new era in the music industry where artists have control over their work and fans become part of the journey.</p>
-    </div>
-
-    <div class="md:w-1/2 w-full flex justify-center md:pt-0 pt-16" data-aos="zoom-in" data-aos-duration="2000">
-        <div class="">
-            <p class="bg-transparent backdrop-blur-xl text-white 2xl:text-xl 2xl:leading-10 text-base leading-8 uppercase px-8 py-2 rounded-xl" >Empower artists by selling <br> music NFTs, engage fans <br>  in their success, and ensure <br>  fairness with blockchain.</p>
+    <section class=" overflow-hidden 2xl:px-24 lg:px-10 px-5 2xl:pt-56 lg:pt-28 pt-20">
+        <div class="flex md:flex-row flex-col items-center">
+        <div class="absolute inset-0 animated-bg -z-50" style="background-image: url('img/music.png');"></div>
+        
+        <div class="md:w-1/2 w-full" >
+            <h1 class="text-white 2xl:text-[120px] xl:text-8xl lg:text-7xl md:text-6xl  text-5xl uppercase" data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
+            data-aos-delay="500">Fan Tokens A New Era in Music</h1>
+            <p class="2xl:text-xl text-base pt-2 text-[#C1C1C1]" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
+            data-aos-delay="500">Discover a new era in the music industry where artists have control over their work and fans become part of the journey.</p>
+        </div>
+        
+        <div class="md:w-1/2 w-full flex justify-center md:pt-0 pt-16" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="">
+                <p class="bg-transparent backdrop-blur-xl text-white 2xl:text-xl 2xl:leading-10 text-base leading-8 uppercase px-8 py-2 rounded-xl" >Empower artists by selling <br> music NFTs, engage fans <br>  in their success, and ensure <br>  fairness with blockchain.</p>
+            </div>
         </div>
     </div>
-    </div>
+    </section>
 
 
-</section>
 
 <section>
     <div class="2xl:pt-40 pt-20 overflow-hidden ">
@@ -126,7 +128,7 @@
     </div>
  
   </section>
-
+<!-- 
   <section>
     <div class="text-center 2xl:py-44 lg:py-24 py-16 px-5">
         <h1 class="2xl:text-8xl md:text-6xl text-5xl text-white" 
@@ -139,6 +141,29 @@
         <div class="flex justify-center xl:pt-10 pt-5">
             <img src="img/voice.png" alt="">
         </div>
+    </div>
+  </section> -->
+
+  <section>
+    <div class="w-full flex flex-col items-center text-center 2xl:py-44 lg:py-24 py-16 px-5 relative">
+      <!-- Left Musical Note (Floating Animation) -->
+      <img src="img/leftmusic.png" alt="Music Note"
+        class="absolute left-0 bottom-10 w-48 opacity-100 -z-50 float-left ">
+  
+        <h1 class="2xl:text-8xl md:text-6xl text-5xl text-white" 
+        data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000">About Fan Token</h1>
+            <p class="2xl:text-2xl lg:text-base text-sm 2xl:leading-[50px] lg:leading-9 leading-7 pt-4 text-[#C1C1C1]"  data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000">Fan Token is a groundbreaking platform using blockchain to create a decentralized marketplace for <br class="hidden md:block"> creators, consumers, and businesses. It empowers artists to control their work and builds a direct, fair  <br class="hidden md:block"> relationship with fans. Join us in revolutionizing how music is created, shared, and enjoyed.</p>
+  
+      <!-- Sound Wave Image -->
+      <img src="img/voice.png" alt="Sound Wave" class="mt-10 w-full">
+  
+      <!-- Right Musical Note (Floating Animation) -->
+      <img src="img/rightmusic.png" alt="Music Note"
+        class="absolute right-0 top-10 w-48 opacity-100 -z-50 float-right md:block hidden">
     </div>
   </section>
 

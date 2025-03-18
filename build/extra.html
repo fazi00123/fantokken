@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes moveBackground {
+            0% { transform: translateX(0) translateY(0); }
+            50% { transform: translateX(50px) translateY(-100px); }
+            100% { transform: translateX(0) translateY(0); }
+        }
+
+        .animated-bg {
+            animation: moveBackground 4s infinite alternate ease-in-out;
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <section class=" overflow-hidden 2xl:px-24 lg:px-10 px-5 2xl:pt-56 lg:pt-28 pt-20">
+        <div class="flex md:flex-row flex-col items-center">
+        <div class="absolute inset-0 animated-bg -z-50" style="background-image: url('img/music.png');"></div>
+        
+        <div class="md:w-1/2 w-full" >
+            <h1 class="text-white 2xl:text-[120px] xl:text-8xl lg:text-7xl md:text-6xl  text-5xl uppercase" data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
+            data-aos-delay="500">Fan Tokens A New Era in Music</h1>
+            <p class="2xl:text-xl text-base pt-2 text-[#C1C1C1]" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
+            data-aos-delay="500">Discover a new era in the music industry where artists have control over their work and fans become part of the journey.</p>
+        </div>
+        
+        <div class="md:w-1/2 w-full flex justify-center md:pt-0 pt-16" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="">
+                <p class="bg-transparent backdrop-blur-xl text-white 2xl:text-xl 2xl:leading-10 text-base leading-8 uppercase px-8 py-2 rounded-xl" >Empower artists by selling <br> music NFTs, engage fans <br>  in their success, and ensure <br>  fairness with blockchain.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <section class="pt-32">
+        <div class="w-full flex flex-col items-center text-center text-white py-20 relative">
+          <!-- Left Musical Note (Floating Animation) -->
+          <img src="./assets/image/aboutleft.png" alt="Music Note"
+            class="absolute left-0 bottom-10 w-48 opacity-100 -z-50 float-left ">
+      
+          <h2 class="text-4xl md:text-5xl font-bold uppercase tracking-widest">About Fan Token</h2>
+          <p class="mt-6 text-lg md:text-xl max-w-3xl text-gray-300">
+            Fan Token is a groundbreaking platform using blockchain to create a decentralized marketplace for
+            creators, consumers, and businesses. It empowers artists to control their work and build a direct, fair
+            relationship with fans. Join us in revolutionizing how music is created, shared, and enjoyed.
+          </p>
+      
+          <!-- Sound Wave Image -->
+          <img src="./assets/image/volume.png" alt="Sound Wave" class="mt-10 w-full">
+      
+          <!-- Right Musical Note (Floating Animation) -->
+          <img src="./assets/image/about right.png" alt="Music Note"
+            class="absolute right-0 top-10 w-48 opacity-100 -z-50 float-right md:block hidden">
+        </div>
+      </section>
+
+
+</body>
+</html>
