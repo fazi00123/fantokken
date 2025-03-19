@@ -874,8 +874,121 @@ video {
   background-color: transparent;
 }
 
+.bg-purple-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 245 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\]{
+  background-color: ;
+}
+
+.bg-\[ur\]{
+  background-color: ur;
+}
+
+.bg-\[url\]{
+  background-color: url;
+}
+
 .bg-opacity-90{
   --tw-bg-opacity: 0.9;
+}
+
+.bg-\[url\(\)\]{
+  background-image: url();
+}
+
+.bg-\[url\(\'\'\)\]{
+  background-image: url('');
+}
+
+.bg-\[url\(\'\.\/\'\)\]{
+  background-image: url('./');
+}
+
+.bg-\[url\(\'i\'\)\]{
+  background-image: url('i');
+}
+
+.bg-\[url\(\'\.\/img\'\)\]{
+  background-image: url('./img');
+}
+
+.bg-\[url\(\'\.\/img\/\'\)\]{
+  background-image: url('./img/');
+}
+
+.bg-\[url\(\'\.\/img\/la\'\)\]{
+  background-image: url('./img/la');
+}
+
+.bg-\[url\(\'\.\'\)\]{
+  background-image: url('.');
+}
+
+.bg-\[url\(\'\.\.\/\'\)\]{
+  background-image: url('../');
+}
+
+.bg-\[url\(\'\.\.\/i\'\)\]{
+  background-image: url('../i');
+}
+
+.bg-\[url\(\'\.\/img\/mobilebg\.png\'\)\]{
+  background-image: url('./img/mobilebg.png');
+}
+
+.bg-\[url\(\'\.\/img\/lan\'\)\]{
+  background-image: url('./img/lan');
+}
+
+.bg-\[url\(\'\.\/img\/landing\'\)\]{
+  background-image: url('./img/landing');
+}
+
+.bg-\[url\(\'\.\/img\/landingbg\.png\'\)\]{
+  background-image: url('./img/landingbg.png');
+}
+
+.bg-\[url\(\'\.\/img\/Landingbg\.png\'\)\]{
+  background-image: url('./img/Landingbg.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/Landingbg\.png\'\)\]{
+  background-image: url('../img/Landingbg.png');
+}
+
+.bg-\[url\(\"\"\.\/img\/Landingbg\.png\)\]{
+  background-image: url(""./img/Landingbg.png);
+}
+
+.bg-\[url\(\"\.\/img\/Landingbg\.png\"\)\]{
+  background-image: url("./img/Landingbg.png");
+}
+
+.bg-\[url\(\'\.\.\/img\/\'\)\]{
+  background-image: url('../img/');
+}
+
+.bg-\[url\(\'\.\.\/img\/bg\'\)\]{
+  background-image: url('../img/bg');
+}
+
+.bg-\[url\(\'\.\.\/img\/bg\.png\'\)\]{
+  background-image: url('../img/bg.png');
+}
+
+.bg-\[url\(\'\.\.\/img\'\)\]{
+  background-image: url('../img');
+}
+
+.bg-\[url\(\'\.\.\/img\/newlandbg\'\)\]{
+  background-image: url('../img/newlandbg');
+}
+
+.bg-\[url\(\'\.\.\/img\/newlandbg\.png\'\)\]{
+  background-image: url('../img/newlandbg.png');
 }
 
 .bg-cover{
@@ -1371,6 +1484,10 @@ body{
     border-radius: 60px;
   }
 
+  .md\:bg-\[url\(\'\.\.\/img\/Landingbg\.png\'\)\]{
+    background-image: url('../img/Landingbg.png');
+  }
+
   .md\:p-14{
     padding: 3.5rem;
   }
@@ -1478,6 +1595,10 @@ body{
 
   .lg\:rounded-\[60px\]{
     border-radius: 60px;
+  }
+
+  .lg\:bg-\[url\(\'\.\.\/img\/Landingbg\.png\'\)\]{
+    background-image: url('../img/Landingbg.png');
   }
 
   .lg\:p-10{
