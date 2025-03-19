@@ -1689,6 +1689,11 @@ body{
     font-size: 29px;
   }
 
+  .xl\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .xl\:leading-10{
     line-height: 2.5rem;
   }
@@ -1713,6 +1718,10 @@ body{
 
   .\32xl\:gap-8{
     gap: 2rem;
+  }
+
+  .\32xl\:gap-14{
+    gap: 3.5rem;
   }
 
   .\32xl\:space-y-8 > :not([hidden]) ~ :not([hidden]){
