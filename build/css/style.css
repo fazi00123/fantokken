@@ -1394,6 +1394,11 @@ video {
     text-align: end;
   }
 
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1433,8 +1438,16 @@ video {
     height: 220px;
   }
 
+  .lg\:h-\[70px\] {
+    height: 70px;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-\[70px\] {
+    width: 70px;
   }
 
   .lg\:grid-cols-4 {
@@ -1593,14 +1606,6 @@ video {
     margin-top: 0px;
   }
 
-  .xl\:h-\[70px\] {
-    height: 70px;
-  }
-
-  .xl\:w-\[70px\] {
-    width: 70px;
-  }
-
   .xl\:gap-14 {
     gap: 3.5rem;
   }
@@ -1663,8 +1668,16 @@ video {
     height: 90px;
   }
 
+  .\32xl\:h-\[100px\] {
+    height: 100px;
+  }
+
   .\32xl\:w-\[90px\] {
     width: 90px;
+  }
+
+  .\32xl\:w-\[100px\] {
+    width: 100px;
   }
 
   .\32xl\:gap-20 {
