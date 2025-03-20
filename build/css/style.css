@@ -793,6 +793,10 @@ video {
   overflow-x: hidden;
 }
 
+.scroll-smooth{
+  scroll-behavior: smooth;
+}
+
 .whitespace-nowrap{
   white-space: nowrap;
 }
@@ -874,117 +878,8 @@ video {
   background-color: transparent;
 }
 
-.bg-purple-50{
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 245 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\]{
-  background-color: ;
-}
-
-.bg-\[ur\]{
-  background-color: ur;
-}
-
-.bg-\[url\]{
-  background-color: url;
-}
-
 .bg-opacity-90{
   --tw-bg-opacity: 0.9;
-}
-
-.bg-\[url\(\)\]{
-  background-image: url();
-}
-
-.bg-\[url\(\'\'\)\]{
-  background-image: url('');
-}
-
-.bg-\[url\(\'\.\/\'\)\]{
-  background-image: url('./');
-}
-
-.bg-\[url\(\'i\'\)\]{
-  background-image: url('i');
-}
-
-.bg-\[url\(\'\.\/img\'\)\]{
-  background-image: url('./img');
-}
-
-.bg-\[url\(\'\.\/img\/\'\)\]{
-  background-image: url('./img/');
-}
-
-.bg-\[url\(\'\.\/img\/la\'\)\]{
-  background-image: url('./img/la');
-}
-
-.bg-\[url\(\'\.\'\)\]{
-  background-image: url('.');
-}
-
-.bg-\[url\(\'\.\.\/\'\)\]{
-  background-image: url('../');
-}
-
-.bg-\[url\(\'\.\.\/i\'\)\]{
-  background-image: url('../i');
-}
-
-.bg-\[url\(\'\.\/img\/mobilebg\.png\'\)\]{
-  background-image: url('./img/mobilebg.png');
-}
-
-.bg-\[url\(\'\.\/img\/lan\'\)\]{
-  background-image: url('./img/lan');
-}
-
-.bg-\[url\(\'\.\/img\/landing\'\)\]{
-  background-image: url('./img/landing');
-}
-
-.bg-\[url\(\'\.\/img\/landingbg\.png\'\)\]{
-  background-image: url('./img/landingbg.png');
-}
-
-.bg-\[url\(\'\.\/img\/Landingbg\.png\'\)\]{
-  background-image: url('./img/Landingbg.png');
-}
-
-.bg-\[url\(\'\.\.\/img\/Landingbg\.png\'\)\]{
-  background-image: url('../img/Landingbg.png');
-}
-
-.bg-\[url\(\"\"\.\/img\/Landingbg\.png\)\]{
-  background-image: url(""./img/Landingbg.png);
-}
-
-.bg-\[url\(\"\.\/img\/Landingbg\.png\"\)\]{
-  background-image: url("./img/Landingbg.png");
-}
-
-.bg-\[url\(\'\.\.\/img\/\'\)\]{
-  background-image: url('../img/');
-}
-
-.bg-\[url\(\'\.\.\/img\/bg\'\)\]{
-  background-image: url('../img/bg');
-}
-
-.bg-\[url\(\'\.\.\/img\/bg\.png\'\)\]{
-  background-image: url('../img/bg.png');
-}
-
-.bg-\[url\(\'\.\.\/img\'\)\]{
-  background-image: url('../img');
-}
-
-.bg-\[url\(\'\.\.\/img\/newlandbg\'\)\]{
-  background-image: url('../img/newlandbg');
 }
 
 .bg-\[url\(\'\.\.\/img\/newlandbg\.png\'\)\]{
@@ -1158,11 +1053,6 @@ video {
 
 .text-5xl{
   font-size: 3rem;
-  line-height: 1;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
   line-height: 1;
 }
 
@@ -1484,10 +1374,6 @@ body{
     border-radius: 60px;
   }
 
-  .md\:bg-\[url\(\'\.\.\/img\/Landingbg\.png\'\)\]{
-    background-image: url('../img/Landingbg.png');
-  }
-
   .md\:p-14{
     padding: 3.5rem;
   }
@@ -1686,11 +1572,6 @@ body{
     line-height: 1;
   }
 
-  .lg\:text-8xl{
-    font-size: 6rem;
-    line-height: 1;
-  }
-
   .lg\:text-9xl{
     font-size: 8rem;
     line-height: 1;
@@ -1741,15 +1622,6 @@ body{
     display: none;
   }
 
-  .xl\:gap-14{
-    gap: 3.5rem;
-  }
-
-  .xl\:bg-\[\#010E11\]{
-    --tw-bg-opacity: 1;
-    background-color: rgb(1 14 17 / var(--tw-bg-opacity, 1));
-  }
-
   .xl\:p-14{
     padding: 3.5rem;
   }
@@ -1787,27 +1659,13 @@ body{
     line-height: 2rem;
   }
 
-  .xl\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .xl\:text-8xl{
     font-size: 6rem;
     line-height: 1;
   }
 
-  .xl\:text-7xl{
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
   .xl\:text-\[28px\]{
     font-size: 28px;
-  }
-
-  .xl\:text-\[29px\]{
-    font-size: 29px;
   }
 
   .xl\:text-xl{
@@ -1833,16 +1691,16 @@ body{
     width: 100px;
   }
 
+  .\32xl\:gap-14{
+    gap: 3.5rem;
+  }
+
   .\32xl\:gap-20{
     gap: 5rem;
   }
 
   .\32xl\:gap-8{
     gap: 2rem;
-  }
-
-  .\32xl\:gap-14{
-    gap: 3.5rem;
   }
 
   .\32xl\:space-y-8 > :not([hidden]) ~ :not([hidden]){
@@ -1945,16 +1803,16 @@ body{
     line-height: 1;
   }
 
+  .\32xl\:text-\[110px\]{
+    font-size: 110px;
+  }
+
   .\32xl\:text-\[120px\]{
     font-size: 120px;
   }
 
-  .\32xl\:text-\[135px\]{
-    font-size: 135px;
-  }
-
-  .\32xl\:text-\[170px\]{
-    font-size: 170px;
+  .\32xl\:text-\[165px\]{
+    font-size: 165px;
   }
 
   .\32xl\:text-\[200px\]{
@@ -1963,6 +1821,10 @@ body{
 
   .\32xl\:text-\[28px\]{
     font-size: 28px;
+  }
+
+  .\32xl\:text-\[29px\]{
+    font-size: 29px;
   }
 
   .\32xl\:text-\[50px\]{
@@ -1988,45 +1850,20 @@ body{
     line-height: 1.75rem;
   }
 
-  .\32xl\:text-\[130px\]{
-    font-size: 130px;
-  }
-
-  .\32xl\:text-\[165px\]{
-    font-size: 165px;
-  }
-
-  .\32xl\:text-\[125px\]{
-    font-size: 125px;
-  }
-
-  .\32xl\:text-\[115px\]{
-    font-size: 115px;
-  }
-
-  .\32xl\:text-\[15px\]{
-    font-size: 15px;
-  }
-
-  .\32xl\:text-\[110px\]{
-    font-size: 110px;
-  }
-
-  .\32xl\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .\32xl\:text-\[29px\]{
-    font-size: 29px;
-  }
-
   .\32xl\:leading-10{
     line-height: 2.5rem;
   }
 
+  .\32xl\:leading-9{
+    line-height: 2.25rem;
+  }
+
   .\32xl\:leading-\[50px\]{
     line-height: 50px;
+  }
+
+  .\32xl\:leading-\[60px\]{
+    line-height: 60px;
   }
 
   .\32xl\:leading-\[70px\]{
@@ -2035,14 +1872,6 @@ body{
 
   .\32xl\:leading-\[80px\]{
     line-height: 80px;
-  }
-
-  .\32xl\:leading-9{
-    line-height: 2.25rem;
-  }
-
-  .\32xl\:leading-\[60px\]{
-    line-height: 60px;
   }
 
   .\32xl\:tracking-\[2\.5em\]{

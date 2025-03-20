@@ -9,7 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
-<body class="bg-no-repeat bg-cover overflow-x-hidden lg:bg-[url('../img/Landingbg.png')] bg-[url('../img/newlandbg.png')]" >
+<body class="bg-no-repeat bg-cover overflow-x-hidden lg:bg-[url('../img/Landingbg.png')] bg-[url('../img/newlandbg.png')] scroll-smooth" >
     <!-- navbar  -->
     <nav x-data="{ open: false }" class="2xl:px-24 lg:px-10 px-5 xl:pt-14 pt-6">
         <div class="flex justify-between items-center">
@@ -598,7 +598,7 @@
     </div>
   </footer>
 
-
+  
 
 
 
@@ -656,5 +656,23 @@
     <script>
         AOS.init();
       </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@latest"></script>
+<script>
+  const lenis = new Lenis({
+    duration: 1.2, // Adjust smoothness
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing function
+    smooth: true,
+    smoothTouch: false
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+</script>
+
 </body>
 </html>
