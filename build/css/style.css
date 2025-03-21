@@ -673,8 +673,16 @@ video {
   width: 12rem;
 }
 
+.w-56{
+  width: 14rem;
+}
+
 .w-8{
   width: 2rem;
+}
+
+.w-80{
+  width: 20rem;
 }
 
 .w-\[50px\]{
@@ -683,14 +691,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-56{
-  width: 14rem;
-}
-
-.w-80{
-  width: 20rem;
 }
 
 .max-w-3xl{
@@ -1198,6 +1198,14 @@ video {
   transition-duration: 150ms;
 }
 
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300{
   transition-duration: 300ms;
 }
@@ -1208,6 +1216,10 @@ video {
 
 .ease-out{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body{
@@ -1233,6 +1245,8 @@ body{
   min-width: 200%;
 }
 
+/* faq  */
+
 .faq-content {
   max-height: 0;
   overflow: hidden;
@@ -1245,6 +1259,8 @@ body{
   /* Adjust height as needed */
   opacity: 1;
 }
+
+/* scrooll bar  */
 
 ::-webkit-scrollbar-track
 {
@@ -1489,10 +1505,6 @@ body{
 
   .lg\:rounded-\[60px\]{
     border-radius: 60px;
-  }
-
-  .lg\:bg-\[url\(\'\.\.\/img\/Landingbg\.png\'\)\]{
-    background-image: url('../img/Landingbg.png');
   }
 
   .lg\:p-10{

@@ -284,7 +284,7 @@
   <!-- benefits section -->
   <section class="2xl:px-24 lg:px-10 px-5 ">
     <div class="flex md:flex-row flex-col items-center 2xl:gap-20 gap-10">
-        <div class="md:w-1/3 w-full" >
+        <div id="animatedImage" class="md:w-1/3 w-full ">
             <img src="img/benefitimg.png" alt="">
         </div>
         <div class="md:w-2/3 full">
@@ -398,6 +398,7 @@
   
 
   <!-- journy section  -->
+
   <!-- <section class="2xl:px-24 lg:px-10 px-5 xl:pt-36 pt-20">
     <div data-aos="zoom-in" data-aos-duration="2000">
         <h1 class="text-white 2xl:text-[165px] xl:text-8xl lg:text-7xl md:text-6xl text-4xl uppercase">Our Journey Ahead</h1>
@@ -438,6 +439,7 @@
     </div>
     </div>
   </section> -->
+  
   <section class="xl:pt-36 pt-20">
     <div class="w-full flex flex-col  text-white py-20 relative">
       <!-- Left Musical Note (Floating Animation) -->
@@ -694,16 +696,9 @@
             }));
         });
     </script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-    <script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
-
-  
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
-
+<!-- smooth animation  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://unpkg.com/@studio-freight/lenis@latest"></script>
 <script>
@@ -720,6 +715,28 @@
   }
   requestAnimationFrame(raf);
 </script>
+
+<!-- image benefit  -->
+<script>
+    const img = document.getElementById("animatedImage");
+  
+    img.addEventListener("mouseenter", () => {
+      img.style.transition = "transform 0.3s ease-in-out";
+      img.style.transform = "rotate(20deg) translateY(-10px)";
+    });
+  
+    img.addEventListener("mouseleave", () => {
+      img.style.transform = "rotate(0deg) translateY(0)";
+    });
+  </script>
+
+
+<script src="https://kit.fontawesome.com/a2ada4947c.js" crossorigin="anonymous"></script>
+    <!-- aos animation  -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 </html>
